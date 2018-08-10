@@ -1,0 +1,101 @@
+.container-fluid {
+  font-family: 'Acme', sans-serif;
+}
+
+.headercontent {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: springgreen;
+}
+
+.title {
+  font-size: 50px;
+}
+
+.highscore {
+  font-size: 30px;
+}
+
+.gamestatus {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: lightgray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30px;
+}
+
+.scene {
+  width: 180px;
+  height: 180px;
+  border: 5px solid #021a40;
+  margin: 2px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.cardface img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.cardfacefront img {
+  background: violet;
+}
+
+.cardfaceback img {
+  transform: rotateY(180deg);
+}
+
+.cardarea {
+  margin-bottom: 20px;
+}
+
+.modalbox {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalboxcontent {
+  padding: 50px;
+  background-color: springgreen;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.btn-secondary {
+  margin-top: 30px;
+}
